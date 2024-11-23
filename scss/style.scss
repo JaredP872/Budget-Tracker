@@ -1,0 +1,76 @@
+$font-stack: Ariel, Helvetica sans-serif;
+$primary-color: #aad576;
+$text-color: #5c8001;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1 {
+  background-color: $primary-color;
+  color: $text-color;
+  text-align: center;
+}
+
+#app {
+  border: $primary-color solid 8px;
+  height: 80vh;
+}
+
+.budget-tracker {
+  border-collapse: collapse;
+  min-width: 750px;
+
+  th {
+    text-align: left;
+    padding: 10px 20px;
+    border-bottom: 2px solid green;
+  }
+
+  td {
+    padding: 5px;
+  }
+}
+
+.input,
+.delete-entry {
+  height: 30px;
+  font-size: 13px;
+  padding: 0 10px;
+  margin: 0;
+  box-sizing: border-box;
+
+  .input {
+    border: 1px solid #dddddd;
+    border-radius: 5px;
+    outline: none;
+  }
+
+  .input:focus {
+    border-color: #bbbbbb;
+  }
+}
+
+.delete-entry {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  background: none;
+  color: red;
+  border: none;
+  border-radius: 50%;
+  outline: none;
+  cursor: pointer;
+}
+
+.delete-entry:hover {
+  background-color: red($color: #a94c4c);
+}
+
+.controls,
+.summary {
+  text-align: right;
+}
