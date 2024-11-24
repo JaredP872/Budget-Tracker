@@ -50,10 +50,6 @@ h1 {
   border-radius: 5px;
   outline: none;
 }
-.input .input:focus,
-.delete-entry .input:focus {
-  border-color: #bbbbbb;
-}
 
 .delete-entry {
   display: flex;
