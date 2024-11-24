@@ -1,6 +1,12 @@
-$font-stack: Ariel, Helvetica sans-serif;
+@import url("https://fonts.googleapis.com/css2?family=Arsenal+SC:ital,wght@0,400;0,700;1,400;1,700&family=Baskervville+SC&family=Georama:ital,wght@0,100..900;1,100..900&family=Honk&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Parkinsans:wght@300..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+$font-stack: "Arsenal SC", serif;
 $primary-color: #aad576;
 $text-color: #5c8001;
+$color1: #f6fff8;
+@mixin linear-gradient($direction, $color1, $primary-color) {
+  background: linear-gradient($direction, $color1, $primary-color);
+}
 
 * {
   margin: 0;
@@ -12,11 +18,13 @@ h1 {
   background-color: $primary-color;
   color: $text-color;
   text-align: center;
+  font-family: $font-stack;
+  font-weight: 400;
 }
 
 #app {
-  border: $primary-color solid 8px;
-  height: 80vh;
+  height: 100vh;
+  @include linear-gradient(to bottom, #aad576, #f6fff8);
 }
 
 .budget-tracker {
@@ -24,13 +32,16 @@ h1 {
   min-width: 750px;
 
   th {
-    text-align: left;
+    text-align: center;
     padding: 10px 20px;
     border-bottom: 2px solid green;
+    font-family: $font-stack;
+    font-weight: 900;
   }
 
   td {
     padding: 5px;
+    font-family: $font-stack;
   }
 }
 
@@ -41,6 +52,8 @@ h1 {
   padding: 0 10px;
   margin: 0;
   box-sizing: border-box;
+  font-family: $font-stack;
+  font-weight: 400;
 
   .input {
     border: 1px solid #dddddd;
@@ -59,15 +72,11 @@ h1 {
   justify-content: center;
   width: 30px;
   background: none;
-  color: red;
+  color: black;
   border: none;
   border-radius: 50%;
   outline: none;
   cursor: pointer;
-}
-
-.delete-entry:hover {
-  background-color: red($color: #a94c4c);
 }
 
 .controls,

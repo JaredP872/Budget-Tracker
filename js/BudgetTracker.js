@@ -69,7 +69,7 @@ export default class BudgetTracker {
                         <input type="number" class="input input-amount" />
                       </td>
                       <td class="input input-type">
-                        <button type="button" class="delete-entry">&#10005;</button>
+                        <button type="button" class="delete-entry"><i class="fa-solid fa-trash"></i></button>
                       </td>
                     </td>
                   </tr>
