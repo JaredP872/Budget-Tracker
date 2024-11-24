@@ -14,6 +14,6 @@ Step 4. Select the type income or expense depending on if you will be expecting 
 
 Step 5. Type the amount of money you will be recieving or paying in the amount tab.
 
-Step 5. Click the x icon in order to delete your information.
+Step 5. Click the trash icon in order to delete your information.
 
 Step 6. Enjoy your new Budget tracker made by CorpTechnologies!
